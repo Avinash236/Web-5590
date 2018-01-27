@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Game of Rock, Paper, Scissors</title>
+   <style>
+       body{
+           background-image: url("rock.jpg");
+       }
+       .para{color: darkblue;font-size: 40px;text-align: center}
+   </style>
+</head>
+<body>
+
+<h1 style="color: darkblue;font-size: 100px;text-align: center">Rock, Paper, Scissors??</h1>
+
+<div >
+
+    <script>
+
+        var userPick = prompt("Pick one? Rock, paper or scissors?");
+        
+            document.write("<p class='para'>your choice :" + " " + userPick + "</p>");
+
+        
+        var computerPick = Math.random();
+        if (computerPick < 0.34) {
+            computerPick = "rock";
+        } else if(computerPick <= 0.67) {
+            computerPick = "paper";
+        } else {
+            computerPick = "scissors";
+        }
+        
+        document.write("<p class='para'>System choice :" + " " + computerPick + "</p>");
+        
+        var compare = function(one,two) {
+            if (one === two) {
+                return "TIE!";
+            }
+            if (one === "rock") {
+                if (two === "scissors") {
+
+                    return "you have won..!";
+                } else {
+
+                    return "you have lost..!";
+                }
+            }
+            if (one === "paper") {
+                if (two === "rock") {
+
+                    return "you have won..!";
+                } else {
+
+                    return "you have lost..!";
+                }
+            }
+            if (one === "scissors") {
+                if (two === "rock") {
+
+                    return "you have lost..!";
+                } else {
+                    return "you have won..!";
+                }
+            }
+        };
+
+        var result = compare(userPick,computerPick);
+
+        document.write("<br><hr><br> <p class='para'>" + result + "<p>");
+    </script>
+
+</div>
+
+</body>
+</html>
