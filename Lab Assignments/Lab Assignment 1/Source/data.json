@@ -1,0 +1,50 @@
+{
+    "courses": [
+        {
+            "description": "mathematics-2",
+            "level": "undergrad",
+            "spring": "yes",
+            "summer": "no",
+            "fall": "yes",
+            "degree": "comp sci",
+            "instructor": "Bhavi",
+            "prerequisites": "html5 & CSS3",
+            "credits": 3,
+            "ratings": 4,
+            "links": "NA",
+            "availability": "True",
+            "duration": "2 months"
+        },
+        {
+            "description": "physics lab",
+            "level": "undergrad",
+            "spring": "no",
+            "summer": "no",
+            "fall": "yes",
+            "degree": "comp sci",
+            "instructor": "chala",
+            "prerequisites": "-",
+            "credits": 3,
+            "ratings": 4,
+            "links": "NA",
+            "availability": "True",
+            "duration": "4 months"
+        },
+        {
+            "description": "verbal skills",
+            "level": "undergrad",
+            "spring": "yes",
+            "summer": "no",
+            "fall": "yes",
+            "degree": "intermediate",
+            "instructor": "yerri mina",
+            "prerequisites": "-",
+            "credits": 3,
+            "ratings": 4,
+            "links": "NA",
+            "availability": "True",
+            "duration": "3 months"
+        }
+
+    ]
+}
